@@ -1,3 +1,9 @@
+input.onButtonPressed(Button.A, function () {
+    serial.writeNumber(1)
+})
+input.onButtonPressed(Button.B, function () {
+    serial.writeNumber(2)
+})
 basic.showString("helloworld!")
 serial.redirect(
 SerialPin.P0,
