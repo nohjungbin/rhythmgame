@@ -1,43 +1,15 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . # # # .
-        # . . . #
-        . # # # .
-        . . # . .
-        # # # # #
-        `)
+    basic.showString("hanleeon")
 })
-input.onButtonPressed(Button.AB, function () {
-    basic.showLeds(`
-        # # # # #
-        . . # . .
-        . # # # .
-        # . . . #
-        . # # # .
-        `)
+input.onGesture(Gesture.Shake, function () {
+    basic.showNumber(randint(0, 9))
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
-        . # . . #
-        # . # . #
-        # . # # #
-        # . # . #
-        . # . . #
-        `)
-})
-basic.forever(function () {
-    basic.showLeds(`
+        . # # # .
         # . . . #
-        . # . # .
+        . # # # .
         . . # . .
-        . # . # .
-        # . . . #
-        `)
-    basic.showLeds(`
-        . # # # .
-        # . . . #
-        # . . . #
-        # . . . #
-        . # # # .
+        # # # # #
         `)
 })
