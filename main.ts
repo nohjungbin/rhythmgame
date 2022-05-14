@@ -1,15 +1,10 @@
-input.onButtonPressed(Button.A, function () {
-    basic.showString("hanleeon")
-})
-input.onGesture(Gesture.Shake, function () {
-    basic.showNumber(randint(0, 9))
-})
-input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . # # # .
-        # . . . #
-        . # # # .
-        . . # . .
-        # # # # #
-        `)
+basic.showString("helloworld!")
+serial.redirect(
+SerialPin.P0,
+SerialPin.P1,
+BaudRate.BaudRate115200
+)
+basic.forever(function () {
+    basic.showString(serial.readUntil(serial.delimiters(Delimiters.NewLine)))
+    basic.pause(1000)
 })

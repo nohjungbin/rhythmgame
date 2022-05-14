@@ -9,9 +9,10 @@
         "mcrobit_first": "github:nohjungbin/mcrobit_first#master",
         "radio-broadcast": "*",
         "Grove": "github:seeed-studio/pxt-grove#v0.5.0",
+        "minode": "github:minodekit/pxt-minode#v1.1.0",
+        "pxt-muselab": "github:muselab/pxt-wifi-shield#v1.9.39",
         "Environment-and-Science-IoT": "github:tinkertanker/pxt-iot-environment-kit#v5.1.7",
-        "smarthome-kit": "github:tinkertanker/pxt-smarthome#v2.2.1",
-        "minode": "github:minodekit/pxt-minode#v1.1.0"
+        "IoTLoRaNode": "github:pisupply/pxt-iot-lora-node#v0.1.37"
     },
     "files": [
         "README.md",
