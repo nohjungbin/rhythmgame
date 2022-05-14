@@ -1,7 +1,43 @@
-ESP8266_IoT.connectWifi("SG_Open", "innovation!")
-loops.everyInterval(EventBusValue.MICROBIT_EVT_ANY, function () {
-	
+input.onButtonPressed(Button.A, function () {
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        . # # # .
+        . . # . .
+        # # # # #
+        `)
+})
+input.onButtonPressed(Button.AB, function () {
+    basic.showLeds(`
+        # # # # #
+        . . # . .
+        . # # # .
+        # . . . #
+        . # # # .
+        `)
+})
+input.onButtonPressed(Button.B, function () {
+    basic.showLeds(`
+        . # . . #
+        # . # . #
+        # . # # #
+        # . # . #
+        . # . . #
+        `)
 })
 basic.forever(function () {
-	
+    basic.showLeds(`
+        # . . . #
+        . # . # .
+        . . # . .
+        . # . # .
+        # . . . #
+        `)
+    basic.showLeds(`
+        . # # # .
+        # . . . #
+        # . . . #
+        # . . . #
+        . # # # .
+        `)
 })
